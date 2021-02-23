@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+/* HEADER */
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(120, 122, 120);
+    color: rgb(85, 203, 207);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    height: 10vh;
+
+}
+
+.nav-bar {
+    font-size: 1.5rem;
+}
+
+.link {
+    text-decoration: none;
+    font-style: italic;
+    color: cadetblue;
+    padding: 10px;
+    border-left: 1px solid cadetblue;
+    ;
+}
+
+.link:hover {
+    text-decoration: underline;
+    font-style: italic;
+    color: rgb(80, 216, 221);
+
+
+}
+
+.book-app {
+    background-color: rgb(227, 230, 233);
+    min-height: 80vh;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42, 44, 42);
+    color: white;
+    text-align: center;
+    height: 10vh;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(160, 157, 157, 0.192);
+}
+
+.x-btn{
+    width: 50px;
+    margin-right: 20px;
+    font-size: 2rem;
+    color:black;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+
+   
+}
+.x-btn:hover{
+    background-color: rgba(160, 157, 157, 0.192);
+
+}
+
+
+.book-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.book-preview-container {
+    background-color: rgb(170, 180, 179);
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.book-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+    padding: 20px;
+}
+
+.book-filter {
+    background-color: rgba(230, 245, 243, 0.342);
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 7px 0px rgba(22, 22, 22, 0.192);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.book-filter input {
+    border-radius: 12px;
+    padding: 5px;
+    margin: 7px;
+    text-align: center;
+}
+
+.book-details-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(220, 218, 231, 0.424);
+    border: 1px solid rgb(139, 139, 130);
+    box-shadow: 0px 2px 7px 0px rgb(102, 99, 99);
+    padding: 18px;
+    border-radius: 12px;
+
+}
+.book-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.review{
+    display: flex; 
+    align-self: center;
+    
+}
+
+.title {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: rgb(75, 88, 3);
+    padding: 4px;
+}
+
+.price {
+    font-weight: bold;
+    font-style: italic;
+    padding: 2px;
+}
+
+.sub-text {
+    font-style: italic;
+}
+
+
+
+
+
+.book-details button {
+    width: 50px;
+    margin: 5px;
+}
+
+.paragraph-title {
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+image {
+    width: 100%;
+}
+
+.book-img {
+    height: 150px;
+    width: 120px;
+    margin-top: 10px;
+    border: 2px solid rgb(211, 210, 190);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;    border-radius: 10px;
+}
+.reviews-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.review{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    border-bottom: 1px solid lightslategrey;
+}
+
+.review-btn ,.open-review-btn{
+    width: 200px;
+    border: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.delete-btn{
+    border: none;
+    font-weight: bold; 
+}
+
+.open-preview-btn{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(225, 235, 183);
+}
+.open-preview-btn:hover{
+    text-decoration: underline;
+    color: rgb(225, 235, 183);
+
+}
+
+.review-btn:hover{
+    background-color:unset;
+
+}
+
+.submit-btn{
+    border: none;
+    color: rgb(42, 40, 40);
+    font-weight: bold;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    background-color: rgb(223, 223, 208);
+    border-radius: 15px;
+}
+
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 200px;
+    
+    
+}
+
+/* USER-MSG */
+.user.msg{
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+.success{
+    background-color: rgb(41, 223, 41);
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    border-radius: 2px;
+
+}
+
+.error{
+    background-color: red;
+}
